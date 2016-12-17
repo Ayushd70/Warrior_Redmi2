@@ -1171,4 +1171,7 @@ config TOUCHSCREEN_HIMAX_HX852xES
 
 source "drivers/input/touchscreen/hx852xes/Kconfig"
 
+config WAKE_GESTURES
+	bool "wake gestures"
+
 endif
