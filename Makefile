@@ -576,17 +576,20 @@ all: vmlinux
 
 KBUILD_CFLAGS	+= $(call cc-disable-warning,maybe-uninitialized,)
 
-ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
-KBUILD_CFLAGS	+= -Os
-else
-KBUILD_CFLAGS	+= -O2
-endif
-
 # Needed to unbreak GCC 7.x and above
 KBUILD_CFLAGS   += $(call cc-option,-fno-store-merging,)
 
 # Kill format truncation warnings
 KBUILD_CFLAGS   += $(call cc-disable-warning,format-truncation,)
+
+# Kill misleading indentation warnings (fuck you prima)
+KBUILD_CFLAGS   += $(call cc-disable-warning,misleading-indentation,)
+
+ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
+KBUILD_CFLAGS	+= -Os
+else
+KBUILD_CFLAGS	+= -O2
+endif
 
 include $(srctree)/arch/$(SRCARCH)/Makefile
 
