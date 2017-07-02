@@ -73,13 +73,13 @@ UTS_TRUNCATE="cut -b -$UTS_LEN"
 
   echo \#define UTS_VERSION \"`echo $UTS_VERSION | $UTS_TRUNCATE`\"
 
-<<<<<<< HEAD
-  echo \#define LINUX_COMPILE_BY \"`echo $LINUX_COMPILE_BY | $UTS_TRUNCATE`\"
-  echo \#define LINUX_COMPILE_HOST \"`echo $LINUX_COMPILE_HOST | $UTS_TRUNCATE`\"
-=======
-  echo \#define LINUX_COMPILE_BY \"rahif\"
-  echo \#define LINUX_COMPILE_HOST \"TheDerp\"
->>>>>>> 03e59e70e1e... kernel: bring in AnyKernel stuffs
+
+
+
+
+  echo \#define LINUX_COMPILE_BY \"Ayush\"
+  echo \#define LINUX_COMPILE_HOST \"War-Machine\"
+
 
   echo \#define LINUX_COMPILER \"`$CC -v 2>&1 | tail -n 1`\"
 ) > .tmpcompile
