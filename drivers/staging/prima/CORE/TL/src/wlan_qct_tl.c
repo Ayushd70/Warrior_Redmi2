@@ -11838,7 +11838,7 @@ WLAN_TLAPGetNextTxIds
   if ( WLAN_MAX_STA_COUNT <= ucNextSTA )
     ucNextSTA = 0;
 
-    isServed = FALSE;
+  isServed = FALSE;
     if ( 0 == pTLCb->ucCurLeftWeight )
     {
       //current prioirty is done
