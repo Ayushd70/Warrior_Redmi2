@@ -12,6 +12,7 @@
  * GNU General Public License for more details.
  */
 
+#pragma GCC diagnostic ignored "-Wunused-value"
 #ifndef _ASM_GENERIC_RELAXED_H_
 #define _ASM_GENERIC_RELAXED_H_
 
