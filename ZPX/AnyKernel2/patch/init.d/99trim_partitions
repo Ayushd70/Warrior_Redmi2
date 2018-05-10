@@ -1,0 +1,5 @@
+#!/system/bin/sh
+fstrim -v /system
+fstrim -v /data
+fstrim -v /cache
+date >> /data/fstrim.log
