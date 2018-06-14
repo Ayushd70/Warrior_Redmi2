@@ -27,11 +27,11 @@ yellow='\033[0;33m'
 red='\033[0;31m'
 nocol='\033[0m'
 # Modify the following variable if you want to build
-export CROSS_COMPILE="$HOME/android/kernels/toolchains/arm-gcc/bin/arm-eabi-"
+export CROSS_COMPILE="$HOME/android/kernels/toolchains/arm-4.9/bin/arm-linux-androideabi-"
 export ARCH=arm
 export SUBARCH=arm
 make wt88047_defconfig
-make -j4
+make -j4 2>&1 | tee buildlog.txt
 
 $DTBTOOL -2 -o $KERNEL_DIR/arch/arm/boot/dt.img -s 2048 -p $KERNEL_DIR/scripts/dtc/ $KERNEL_DIR/arch/arm/boot/dts/
 echo -e "$blue***********************************************"
