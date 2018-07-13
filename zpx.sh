@@ -26,7 +26,7 @@ export USE_CCACHE=1
 #@@@@@@@@@@@@@@@@@@@@@@ DEFINITIONS BEGIN @@@@@@@@@@@@@@@@@@@@@@@@@@@#
 ##### Tool-chain, you should get it yourself which tool-chain 
 ##### you would like to use
-KERNEL_TOOLCHAIN=/root/arm-linux-gnueabi/bin/arm-linux-gnueabi-
+KERNEL_TOOLCHAIN=/home/eko/linaro/bin/arm-eabi-
 
 ## This script should be inside the kernel-code directory
 KERNEL_DIR=$PWD
@@ -152,7 +152,7 @@ ZIMAGE=zImage
 DATE=$(date +"%Y%m%d-%H%M");
 
 #ubah nama device masing-masing (ido)
-ZIP=ZPX-EXCALIBUR-$z-redmi2-$DATE.zip;
+ZIP=sempak-beta.zip;
 
 #dtb tool
 
