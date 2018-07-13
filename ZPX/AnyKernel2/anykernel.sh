@@ -37,8 +37,6 @@ dump_boot;
 
 # begin ramdisk changes
 
-replace_line init.qcom.power.rc "setprop sys.io.scheduler" "    setprop sys.io.scheduler \"zen"\";
-
 ## end ramdisk changes
 
 write_boot;
