@@ -45,10 +45,10 @@ ui_print "   / __/ |/_/ ___/ _ | / /  /  _/ _ )/ / / / _ \  "
 ui_print "  / _/_>  </ /__/ __ |/ /___/ // _  / /_/ / , _/  "
 ui_print " /___/_/|_|\___/_/ |_/____/___/____/\____/_/|_|   "
 ui_print "                                                  "
-ui_print "                 ZPX Kernel Nougat                "
+ui_print "               ZPX Kernel Oreo             "
 ui_print "                                                  "
 ui_print "                     (Redmi 2)                    "
-ui_print "                                                  "
+ui_print "                                                  "
 ui_print "**************************************************"
 ui_print " ";
 mount -o ro -t auto /system;

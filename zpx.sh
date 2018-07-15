@@ -152,7 +152,7 @@ ZIMAGE=zImage
 DATE=$(date +"%Y%m%d-%H%M");
 
 #ubah nama device masing-masing (ido)
-ZIP=sempak-beta.zip;
+ZIP=Sempak-$z-$DATE.zip;
 
 #dtb tool
 
@@ -170,7 +170,7 @@ cd ../..;
 
 # The whole process is now complete. Now do some touches...
 # move ZIP to /root
-mv -f $ANYKERNEL/$ZIP /root/r2/$ZIP;
+mv -f $ANYKERNEL/$ZIP /home/eko/r2/$ZIP;
 
 echo "Uploading to my account telegram. . .";
 cd
