@@ -152,7 +152,7 @@ ZIMAGE=zImage
 DATE=$(date +"%Y%m%d-%H%M");
 
 #ubah nama device masing-masing (ido)
-ZIP=Sempak-$z-$DATE.zip;
+ZIP=EXCALIBUR-oreo-$z-$DATE.zip;
 
 #dtb tool
 
