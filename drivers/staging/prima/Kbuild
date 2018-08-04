@@ -710,6 +710,9 @@ endif
 # Fix build for GCC 4.7
 EXTRA_CFLAGS += -Wno-maybe-uninitialized -Wno-unused-function -Wno-unused-variable
 
+# Fix build for GCC  7.x
+EXTRA_CFLAGS += -Wno-switch-unreachable
+
 ifeq ($(CONFIG_WLAN_OFFLOAD_PACKETS),y)
 CDEFINES += -DWLAN_FEATURE_OFFLOAD_PACKETS
 endif
